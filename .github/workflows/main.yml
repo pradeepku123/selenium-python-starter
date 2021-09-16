@@ -30,9 +30,7 @@ jobs:
           python -m pip install --upgrade pip
       - name: install pipenv
         run: pip install pipenv
-      - name: pipenv shell
-        run: pipenv shell
-      - name: pipenv install
+      - name: pipenv install --dev
         run: pipenv install
       - name: Run tests with pytest
         run: pipenv run py.test  -v -s
