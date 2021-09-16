@@ -11,16 +11,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: nanasess/setup-chromedriver@master
-      - uses: actions/checkout@v2
-        with:
-          # Optional: do not specify to match Chrome's version
-          chromedriver-version: '93.0.4577.63.0'
-      - run: |
-         export DISPLAY=:99
-         chromedriver --url-base=/wd/hub &
-         sudo Xvfb -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 & # optional
       - name: Install Python 3
         uses: actions/setup-python@v1
         with:
@@ -32,4 +22,4 @@ jobs:
           pipenv shell
           pipenv install
       - name: Run tests with pytest
-        run: pipenv run py.test  -v -s 
+        run: pipenv run py.test  -v -s
