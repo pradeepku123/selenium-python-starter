@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           # Optional: do not specify to match Chrome's version
-          chromedriver-version: "93.0.4577.63.0"
+          chromedriver-version: "93.0.4577.82"
       - run: |
           export DISPLAY=:99
           chromedriver --url-base=/wd/hub &
