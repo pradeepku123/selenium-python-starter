@@ -6,3 +6,9 @@ driver
 ## Exclude venv
 
 venv
+
+
+## Compiled File 
+
+src/tests/__pycache__/
+
