@@ -30,3 +30,7 @@ clone the repo https://github.com/cypress-io/cypress-realworld-app.git
 
 yarn install
 yarn start
+
+## Start with specific file
+
+pytest -s -q src/tests/test_navigation.py
