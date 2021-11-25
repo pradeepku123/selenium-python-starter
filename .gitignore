@@ -12,3 +12,4 @@ venv
 
 src/tests/__pycache__/
 
+src/main/testdata/__pycache__/test_user.cpython-310-pytest-6.2.5.pyc
