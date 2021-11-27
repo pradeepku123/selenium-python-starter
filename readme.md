@@ -33,4 +33,4 @@ yarn start
 
 ## Start with specific file
 
-pytest -s -q src/tests/test_navigation.py
+pytest -s -q src/tests/UI/Base_test.py

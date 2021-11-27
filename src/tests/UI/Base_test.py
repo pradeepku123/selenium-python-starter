@@ -1,5 +1,6 @@
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+from assertpy import assert_that
 import time
 
 
@@ -21,7 +22,7 @@ class Base_Test:
             '[data-test="signin-submit"]').click()
 
     def find_current_url(self, expected_url):
-        assert self.driver.current_url == expected_url
+        assert_that(self.driver.current_url).is_equal_to(expected_url)
 
 
 def test_navigation():
